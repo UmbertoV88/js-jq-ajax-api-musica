@@ -14,11 +14,20 @@
      <body>
          <header></header>
          <main>
+
+             <select class="genere">
+                 <option value= " " selected> Scegli il genere  </option>
+                 <option value="rock"> Rock </option>
+                 <option value="pop"> Pop </option>
+                 <option value="jazz"> Jazz </option>
+                 <option value="metal"> Metal </option>
+             </select>
              <div class="container"></div>
+
          </main>
          <script id="template" type="text/x-handlebars-template">
 
-             <div class="scheda-album">
+             <div class="scheda-album" data-genere = "{{genere}}">
                  <img src="{{ copertina }}" alt="Copertina Album {{ album }}">
                  <p> {{ album }} </p>
                  <small> {{ artista }} </small>
