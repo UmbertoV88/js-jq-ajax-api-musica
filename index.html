@@ -12,6 +12,19 @@
      <title></title>
      </head>
      <body>
+         <header></header>
+         <main>
+             <div class="container"></div>
+         </main>
+         <script id="template" type="text/x-handlebars-template">
 
+             <div class="scheda-album">
+                 <img src="{{ copertina }}" alt="Copertina Album {{ album }}">
+                 <p> {{ album }} </p>
+                 <span> {{ artista }} </span>
+                 <span> {{ anno }} </span>
+             </div>
+
+         </script>
      </body>
  </html>
